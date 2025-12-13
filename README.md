@@ -1,4 +1,4 @@
-<img width="1024" height="600" alt="image" src="https://github.com/user-attachments/assets/3b4e9fdc-6d34-47a4-a793-0af2be819f24" /># FNAF_PARODIA
+# FNAF_PARODIA
 В этом репозитории будет храниться актуальная версия игры, которую мы создаём. 
 Ниже предоставлен гайд, как скачать и поставить себе актуальную версию.
 
