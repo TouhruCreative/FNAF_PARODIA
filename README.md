@@ -1,4 +1,4 @@
-# FNAF_PARODIA
+<img width="1921" height="1081" alt="image" src="https://github.com/user-attachments/assets/d9595ed7-dee6-4c59-b67a-d783cb47f37a" /># FNAF_PARODIA
 В этом репозитории будет храниться актуальная версия игры, которую мы создаём. 
 Ниже предоставлен гайд, как скачать и поставить себе актуальную версию.
 
@@ -13,6 +13,8 @@
 <img width="1024" height="600" alt="image" src="https://github.com/user-attachments/assets/519ab606-3673-480b-a6eb-f74c40bc5017" />
 
 3. Ждёмс, когда загрузиться проект
-
+4. После в открывшемся окне нажимаем ПКМ в Project -> Show in Explorer.(Нажмите по пустому месту, а не на файл)
+<img width="1921" height="1081" alt="image" src="https://github.com/user-attachments/assets/870f4a0f-5b02-4931-8bb3-81730f44fd58" />
+<img width="1097" height="713" alt="image" src="https://github.com/user-attachments/assets/f1110d51-0add-43f8-8757-079ee3d2c998" />
 
 ### ToDo
