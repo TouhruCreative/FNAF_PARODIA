@@ -29,6 +29,8 @@
 4. После в открывшемся окне нажимаем ПКМ в Project -> Show in Explorer.(Нажмите по пустому месту, а не на файл)
 <img width="1921" height="1081" alt="image" src="https://github.com/user-attachments/assets/870f4a0f-5b02-4931-8bb3-81730f44fd58" />
 <img width="1097" height="713" alt="image" src="https://github.com/user-attachments/assets/f1110d51-0add-43f8-8757-079ee3d2c998" />
-5. Скачать Assets с github-а
+5. Скачать Assets с github
+   
 <img width="413" height="349" alt="image" src="https://github.com/user-attachments/assets/ca00df09-1701-43e1-a697-e47e88f31511" />
+
 6. Здесь заменяем папку Assets на ту, которую вы скачали
