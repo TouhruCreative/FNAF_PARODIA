@@ -3,9 +3,10 @@
 Ниже предоставлен гайд, как скачать и поставить себе актуальную версию.
 
 ### Содержание
-[Гайд](#Первый-шаг)\n
-[ToDo список](#ToDo)
-[5 урок и материалы к нему](https://github.com/TouhruCreative/FNAF_PARODIA/tree/main/For%20L5)
+> [!NOTE]
+> - [Гайд](#Первый-шаг)
+> - [ToDo список](#ToDo)
+> - [5 урок и материалы к нему](https://github.com/TouhruCreative/FNAF_PARODIA/tree/main/For%20L5)
 
 ### ToDo
 
