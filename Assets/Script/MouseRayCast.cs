@@ -4,12 +4,24 @@ using UnityEngine;
 
 public class MouseRayCast : MonoBehaviour
 {
+    public GameObject DoorLeft;
+    public GameObject DoorRight;
+    private bool isLeftDoorOpen = false;
+    private bool isRightDoorOpen = false;
+    
     void RayCast(){
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit,50f))
         {
             if(hit.collider.tag == "button"){
+                if (hit.collider.name == "LT button") 
+                    isLeftDoorOpen = !isLeftDoorOpen;
+                if (hit.collider.name == "RT button")
+                    isRightDoorOpen = !isRightDoorOpen;
+                    
+                DoorLeft.SetActive(isLeftDoorOpen);
+                DoorRight.SetActive(isRightDoorOpen);
                 Debug.Log("Button Clicked");
             }
         }
@@ -17,10 +29,9 @@ public class MouseRayCast : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
+        if(Input.GetMouseButtonDown(0))
             RayCast();
-        }
+        
     }
 }
 
