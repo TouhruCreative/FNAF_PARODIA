@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BatteryManager : MonoBehaviour
 {
     public static float currentBattery;
     public static int energyFactor = 0;
     const float maxBattery = 100;
-    
+
+    public TMP_Text batteryText;
+
     void Start()
     {
         currentBattery = maxBattery;
@@ -15,11 +18,15 @@ public class BatteryManager : MonoBehaviour
 
     void Update()
     {
+
         if (currentBattery > 0)
             currentBattery -= energyFactor * Time.deltaTime;
-        else 
+        else
+        {
             currentBattery = 0;
-        Debug.Log(currentBattery);
+            //Lose();
+        }
+        batteryText.text = ( (int)currentBattery ).ToString() + '%';
     }
 
 }

@@ -6,9 +6,16 @@ public class MouseRayCast : MonoBehaviour
 {
     public GameObject DoorLeft;
     public GameObject DoorRight;
+    public GameObject LightLeft;
+    public GameObject LightRight;
+
+    
+
     private bool isLeftDoorOpen = false;
     private bool isRightDoorOpen = false;
-    
+    private bool isLeftLightOn = false;
+    private bool isRightLightOn = false;
+
     void RayCast(){
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -29,9 +36,36 @@ public class MouseRayCast : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-            RayCast();
-        
+        if (Input.GetKeyDown(KeyCode.Q))//Light left
+        {
+            isLeftLightOn = !isLeftLightOn;
+            if (isLeftLightOn) BatteryManager.energyFactor++;
+            else { BatteryManager.energyFactor--; }
+        }
+        if (Input.GetKeyDown(KeyCode.A))//Door left
+        { // !True = false
+            isLeftDoorOpen = !isLeftDoorOpen;
+            if (isLeftDoorOpen) BatteryManager.energyFactor++;
+            else { BatteryManager.energyFactor--; }
+        }
+        if (Input.GetKeyDown(KeyCode.E))//Light right
+        {
+            isRightLightOn = !isRightLightOn;
+            if (isRightLightOn) BatteryManager.energyFactor++;
+            else { BatteryManager.energyFactor--; }
+        }
+        if (Input.GetKeyDown(KeyCode.D))//Door right
+        {
+            isRightDoorOpen = !isRightDoorOpen;
+            if (isRightDoorOpen) BatteryManager.energyFactor++;
+            else { BatteryManager.energyFactor--; }
+        }
+        //if(Input.GetMouseButtonDown(0))
+        //   RayCast();
+        DoorLeft.SetActive(isLeftDoorOpen);
+        DoorRight.SetActive(isRightDoorOpen);
+        LightLeft.SetActive(isLeftLightOn);
+        LightRight.SetActive(isRightLightOn);
     }
 }
 
